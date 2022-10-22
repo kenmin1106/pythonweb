@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <title>Hello, world!</title>
+
+    <style>
+      body {
+        font-family: "Century Gothic", "Lato", sans-serif;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      .et-hero-tabs,
+      .et-slide {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        position: relative;
+        background: #eee;
+        text-align: center;
+        padding: 0 2em;
+
+        h1 {
+          font-size: 2rem;
+          margin: 0;
+          letter-spacing: 1rem;
+        }
+
+        h3 {
+          font-size: 1rem;
+          letter-spacing: 0.3rem;
+          opacity: 0.6;
+        }
+      }
+
+      .et-hero-tabs-container {
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 70px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        background: #fff;
+        z-index: 10;
+
+        &--top {
+          position: fixed;
+          top: 0;
+        }
+      }
+
+      .et-hero-tab {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+        color: #000;
+        letter-spacing: 0.1rem;
+        transition: all 0.5s ease;
+        font-size: 0.8rem;
+
+        &:hover {
+          color: white;
+          background: rgba(102, 177, 241, 0.8);
+          transition: all 0.5s ease;
+        }
+      }
+
+      .et-hero-tab-slider {
+        position: absolute;
+        bottom: 0;
+        width: 0;
+        height: 6px;
+        background: #66b1f1;
+        transition: left 0.3s ease;
+      }
+
+      @media (min-width: 800px) {
+        .et-hero-tabs,
+        .et-slide {
+          h1 {
+            font-size: 3rem;
+          }
+
+          h3 {
+            font-size: 1rem;
+          }
+        }
+
+        .et-hero-tab {
+          font-size: 1rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <section class="et-hero-tabs">
+      <h1>WELCOME !</h1>
+      <h3>SCROLL DOWN OR PRESS BUTTONS BELOW TO SEE DIRECTLY WHAT YOU WANT</h3>
+      <div class="et-hero-tabs-container">
+        <a class="et-hero-tab" href="#tab-es6">TRAN</a>
+        <a class="et-hero-tab" href="#tab-flexbox">NGOC</a>
+        <a class="et-hero-tab" href="#tab-react">QUANG</a>
+        <a class="et-hero-tab" href="#tab-angular">MINH</a>
+
+        <span class="et-hero-tab-slider"></span>
+      </div>
+    </section>
+
+    <!-- Main -->
+    <main class="et-main">
+      <section class="et-slide" id="tab-es6">
+        <h1>Trần</h1>
+        <h3>Danh tướng Trần Hưng Đạo.</h3>
+        <h3>Võ tướng nhà Tây Sơn Trần Quang Diệu.</h3>
+        <h3>Tổng bí thư đầu tiên Trần Phú.</h3>
+        <h3>Nhà văn, nhà cách mạng Trần Huy Liệu.</h3>
+      </section>
+      <section class="et-slide" id="tab-flexbox">
+        <h1>Ngọc</h1>
+        <h3>
+          Ngọc có nghĩa là ngọc ngà châu báu, là bảo vật cần được bao bọc, giữ
+          gìn và yêu thương. Đặt tên con gái là Ngọc ý chỉ còn là điều quý báu
+          nhất của cha mẹ, mong con sau này sẽ có cuộc sống giàu sang, phú quý.
+          Ngọc mang ý nghĩa là trong trắng đẹp đẽ, hàm ý chỉ dung mạo xinh đẹp,
+          trắng trẻo. Ngọc tượng trưng cho sự tôn quý và thanh cao, cần được
+          kính trọng. Ba mẹ mong con tên Ngọc sẽ có phẩm chất cao đẹp, thái độ
+          lịch sự, nhã nhặn, biết tôn trọng người khác. Ngọc còn có ý nghĩa là
+          yêu thương, đùm bọc, sẵn sàng giúp đỡ và che chở người mình yêu
+          thương.
+        </h3>
+      </section>
+      <section class="et-slide" id="tab-react">
+        <h1>Quang</h1>
+        <h3>
+          Về ý nghĩa thì tên Quang là ánh sáng, ánh sáng này thể hiện mong muốn
+          của các bậc sinh thành mong muốn có có cuộc đời rạng rỡ, tươi sáng và
+          đạt nhiều thành công may mắn trong cuộc sống.
+        </h3>
+      </section>
+      <section class="et-slide" id="tab-angular">
+        <h1>Minh</h1>
+        <h3>
+          + Tên Minh có ý nghĩa là Bao La: Một con người có tấm lòng quảng đại
+          cùng một trái tim giàu lòng yêu thương, luôn luôn sẵn sàng hộ trợ,
+          chia sẻ mọi người trong cuộc sống.
+        </h3>
+        <h3>
+          + Tên Minh thường là người Ngay Thẳng: Một con người cương trực, thẳng
+          thắn, ngay thẳng không dối gian, không lòng vòng. Từng hành động, cử
+          chỉ, lời nói luôn làm cho người đối diện, tiếp xúc có một cảm giác an
+          tâm, tin tưởn
+        </h3>
+        <h3>
+          + Tên Minh mang nghĩa Sáng Suốt: Một người minh mẫn, luôn nhận thức rõ
+          ràng và giải quyết mọi vấn đề một cách thỏa đáng. Trong mọi việc, mọi
+          tình huống bạn luôn biết cách để chúng trở nên dễ dàng và chu toàn
+          nhất.
+        </h3>
+      </section>
+      <section class="et-slide" id="tab-other">
+        <h1>Other</h1>
+        <h3>something about other</h3>
+      </section>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      class StickyNavigation {
+        constructor() {
+          this.currentId = null;
+          this.currentTab = null;
+          this.tabContainerHeight = 70;
+          let self = this;
+          $(".et-hero-tab").click(function () {
+            self.onTabClick(event, $(this));
+          });
+          $(window).scroll(() => {
+            this.onScroll();
+          });
+          $(window).resize(() => {
+            this.onResize();
+          });
+        }
+
+        onTabClick(event, element) {
+          event.preventDefault();
+          let scrollTop =
+            $(element.attr("href")).offset().top - this.tabContainerHeight + 1;
+          $("html, body").animate({ scrollTop: scrollTop }, 600);
+        }
+
+        onScroll() {
+          this.checkTabContainerPosition();
+          this.findCurrentTabSelector();
+        }
+
+        onResize() {
+          if (this.currentId) {
+            this.setSliderCss();
+          }
+        }
+
+        checkTabContainerPosition() {
+          let offset =
+            $(".et-hero-tabs").offset().top +
+            $(".et-hero-tabs").height() -
+            this.tabContainerHeight;
+          if ($(window).scrollTop() > offset) {
+            $(".et-hero-tabs-container").addClass(
+              "et-hero-tabs-container--top"
+            );
+          } else {
+            $(".et-hero-tabs-container").removeClass(
+              "et-hero-tabs-container--top"
+            );
+          }
+        }
+
+        findCurrentTabSelector(element) {
+          let newCurrentId;
+          let newCurrentTab;
+          let self = this;
+          $(".et-hero-tab").each(function () {
+            let id = $(this).attr("href");
+            let offsetTop = $(id).offset().top - self.tabContainerHeight;
+            let offsetBottom =
+              $(id).offset().top + $(id).height() - self.tabContainerHeight;
+            if (
+              $(window).scrollTop() > offsetTop &&
+              $(window).scrollTop() < offsetBottom
+            ) {
+              newCurrentId = id;
+              newCurrentTab = $(this);
+            }
+          });
+          if (this.currentId != newCurrentId || this.currentId === null) {
+            this.currentId = newCurrentId;
+            this.currentTab = newCurrentTab;
+            this.setSliderCss();
+          }
+        }
+
+        setSliderCss() {
+          let width = 0;
+          let left = 0;
+          if (this.currentTab) {
+            width = this.currentTab.css("width");
+            left = this.currentTab.offset().left;
+          }
+          $(".et-hero-tab-slider").css("width", width);
+          $(".et-hero-tab-slider").css("left", left);
+        }
+      }
+
+      new StickyNavigation();
+    </script>
+  </body>
+</html>
